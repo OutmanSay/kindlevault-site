@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KindleVault — Privacy Policy</title>
+  <style>
+    body {
+      max-width: 720px;
+      margin: 48px auto;
+      padding: 0 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      line-height: 1.65;
+      color: #1f2937;
+      background: #ffffff;
+    }
+    h1 { font-size: 28px; color: #111827; margin-bottom: 6px; }
+    h2 { font-size: 18px; color: #111827; margin-top: 28px; }
+    .meta { color: #6b7280; font-size: 14px; margin-bottom: 28px; }
+    .callout {
+      background: #fffbeb;
+      border-left: 4px solid #d97706;
+      padding: 12px 16px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <h1>KindleVault Privacy Policy</h1>
+  <p class="meta">Effective Date: November 24, 2026</p>
+
+  <div class="callout">
+    <strong>Short version:</strong> KindleVault runs 100% locally in your browser. We never collect, transmit, sell, or store your Amazon credentials, Kindle library, highlights, notes, or <code>My Clippings.txt</code> files.
+  </div>
+
+  <h2>1. Data Processing &amp; Local Storage</h2>
+  <p>
+    KindleVault reads highlight content solely from Amazon Kindle Notebook pages you open in your browser or from local <code>My Clippings.txt</code> files you explicitly select. All exported Markdown files, synced book metadata, and settings are stored strictly on your device using Chrome's <code>chrome.storage.local</code> API.
+  </p>
+
+  <h2>2. Zero Amazon Credentials</h2>
+  <p>
+    KindleVault never asks for, accesses, or stores your Amazon username or password. Pagination requests to Amazon Kindle Notebook run same-origin inside your browser tab using your existing signed-in session.
+  </p>
+
+  <h2>3. Optional Pro License Verification</h2>
+  <p>
+    If you purchase a one-time KindleVault Pro license and click "Activate", the extension sends only your license key and product identifier to Gumroad's verification API (<code>https://api.gumroad.com/v2/licenses/verify</code>) to validate your license. No personal reading data or browsing history is included.
+  </p>
+
+  <h2>4. No Analytics or Third-Party Trackers</h2>
+  <p>
+    KindleVault contains zero analytics SDKs, zero advertising scripts, and zero third-party telemetry.
+  </p>
+
+  <h2>5. Data Deletion</h2>
+  <p>
+    You can delete individual books from the KindleVault popup at any time, or remove all stored data immediately by uninstalling the extension from Chrome.
+  </p>
+
+  <h2>6. Contact</h2>
+  <p>
+    Questions about this privacy policy? Contact the developer via the Chrome Web Store support page or Gumroad product page.
+  </p>
+</body>
+</html>
